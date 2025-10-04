@@ -9,8 +9,8 @@ Algoritmos Evolutivos são técnicas de Inteligência Artificial inspiradas na e
 **Estrutura de cada aula:**
 
 * **Conceito (1h – 1h30)** → até concluir toda a teoria prevista.
-* **Prática guiada (1h30)** → em aulas pares ou alternadas.
-* **Projeto de bimestre (1h30)** → em aulas pares ou alternadas.
+* **Prática guiada (1h30)** 
+* **Projeto de bimestre (1h30)** 
 
 Depois que o conteúdo teórico estiver fechado, **todo o tempo será prática + projeto**.
 
