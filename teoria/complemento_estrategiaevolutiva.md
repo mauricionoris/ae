@@ -19,10 +19,7 @@ Ao contrário dos Algoritmos Genéticos (GA), as **Estratégias Evolutivas** enf
 
 ## Representação de um indivíduo
 
-Um indivíduo é descrito por:
-
-$(x, \sigma)$
-onde:
+Um indivíduo é descrito por: $(x, \sigma)$ onde:
 
 * $x = (x_1, x_2, \dots, x_n)$ → vetor de variáveis (solução)
 * $\sigma = (\sigma_1, \sigma_2, \dots, \sigma_n)$ → desvios padrão (passos de mutação)
@@ -36,9 +33,10 @@ Esses $\sigma_i$ são **auto-adaptativos** — evoluem junto com a solução.
 ### 1 Recombinação (opcional)
 
 Pode ser **global** ou **local**:
-$$
-x_i' = \frac{1}{p} \sum_{k=1}^{p} x_i^{(k)}
-$$
+
+$x_i' = \frac{1}{p} \sum_{k=1}^{p} x_i^{(k)}$
+
+
 onde $p$ é o número de pais.
 Pode-se aplicar recombinação também aos $\sigma_i$.
 
@@ -48,13 +46,9 @@ Pode-se aplicar recombinação também aos $\sigma_i$.
 
 A mutação é **gaussiana**, controlada por $\sigma$:
 
-$$
-\sigma_i' = \sigma_i \cdot e^{\tau' N(0,1) + \tau N_i(0,1)}
-$$
+$\sigma_i' = \sigma_i \cdot e^{\tau' N(0,1) + \tau N_i(0,1)}$
 
-$$
-x_i' = x_i + \sigma_i' \cdot N_i(0,1)
-$$
+$x_i' = x_i + \sigma_i' \cdot N_i(0,1)$
 
 onde:
 
