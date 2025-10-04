@@ -25,6 +25,19 @@ A nota final será composta pelos seguintes critérios:
 | Atividades individuais              | 20%  |
 
 
+## Cronograma de entrega das atividades
+
+| Quando a atividade for entregue                   | Valor |
+| --------------------------------------------------| ----- |
+| No prazo                                          | 100%  |
+| Atrasado até 18/11/2025                           |  70%  |
+| Atrasado entre 19/11/2025 e 02/12/2025            |  50%  |
+
+
+## Cronograma (pode haver alterações)
+![Cronograma](./fig/cronograma.png)
+
+
 ## **Distribuição Aula a Aula**
 
 ### **Aula 1 (1h30 conceito + 1h30 prática)**
@@ -90,7 +103,9 @@ A nota final será composta pelos seguintes critérios:
 **Conceito:**
 
 * Mutação (bit flip, gaussiana, troca).
+* Parâmetros (população, crossover, mutação).
 * Elitismo e convergência prematura.
+* Critérios de parada.
 
 **Prática:**
 
@@ -98,49 +113,3 @@ A nota final será composta pelos seguintes critérios:
 * Testar diferentes taxas de mutação.
 
 ---
-
-### **Aula 6 (1h30 conceito + 1h30 projeto)**
-
-**Conceito:**
-
-* Parâmetros (população, crossover, mutação).
-* Critérios de parada.
-* No Free Lunch Theorem.
-
-**Projeto:**
-
-* Ajustar parâmetros do algoritmo do grupo.
-* Rodar experimentos e registrar resultados.
-
----
-
-### **Aula 7 (0h conceito + 1h30 prática + 1h30 projeto)**
-
-**Conceito:**
-
-* Encerramento da parte teórica: aplicações em TSP, mochila, funções benchmark.
-* Variantes (diferential evolution, programação genética).
-
-**Prática:**
-
-* Resolver problema clássico (TSP ou mochila).
-
-**Projeto:**
-
-* Refinar solução do grupo.
-* Preparar relatório e análise de resultados.
-
----
-
-### **Aula 8 (0h conceito + 1h30 prática + 1h30 projeto)**
-
-**Prática:**
-
-* Rodar experimentos finais, análises comparativas.
-* Preparar visualizações (curvas de convergência, comparação de parâmetros).
-
-**Projeto:**
-
-* Apresentação final dos grupos (10–15 min cada).
-* Discussão coletiva dos resultados.
-
