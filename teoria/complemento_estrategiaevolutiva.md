@@ -2,9 +2,9 @@
 
 #  Estratégias Evolutivas (Evolution Strategies — ES)
 
-**Família:** Algoritmos Evolutivos
-**Inspiração:** processo de **seleção natural** e **mutação adaptativa** em organismos biológicos.
-**Objetivo:** otimizar funções contínuas (sem necessidade de gradiente).
+- **Família:** Algoritmos Evolutivos
+- **Inspiração:** processo de **seleção natural** e **mutação adaptativa** em organismos biológicos.
+- **Objetivo:** otimizar funções contínuas (sem necessidade de gradiente).
 
 ---
 
@@ -20,9 +20,8 @@ Ao contrário dos Algoritmos Genéticos (GA), as **Estratégias Evolutivas** enf
 ## Representação de um indivíduo
 
 Um indivíduo é descrito por:
-$$
-(x, \sigma)
-$$
+
+$$ (x, \sigma) $$
 onde:
 
 * $x = (x_1, x_2, \dots, x_n)$ → vetor de variáveis (solução)
