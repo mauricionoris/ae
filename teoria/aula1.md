@@ -4,8 +4,9 @@
 
 **Definição simples**:
 Algoritmos Evolutivos são técnicas de **Inteligência Artificial inspiradas na evolução natural**.
-Eles simulam o processo de **[seleção natural](./complemento_selecaonatural.md)**, onde indivíduos mais adaptados têm maior chance de sobreviver e se reproduzir, gerando novas soluções cada vez melhores para um problema.
+Eles simulam o processo de **[seleção natural](./complemento_selecaonatural.md)**, onde indivíduos mais adaptados têm maior chance de sobreviver e se reproduzir, gerando novas soluções cada vez melhores para um problema. 
 
+A seleção natural é considerada uma das idéias mais revolucionárias da ciência. [clique aqui](./complemento_ideiarevolucionaria.md) 
 ---
 
 ## Introdução 
