@@ -21,7 +21,7 @@ Ao contrário dos Algoritmos Genéticos (GA), as **Estratégias Evolutivas** enf
 
 Um indivíduo é descrito por:
 
-$ (x, \sigma) $
+$(x, \sigma)$
 onde:
 
 * $x = (x_1, x_2, \dots, x_n)$ → vetor de variáveis (solução)
