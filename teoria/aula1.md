@@ -8,6 +8,12 @@ Eles simulam o processo de **seleção natural**, onde indivíduos mais adaptado
 
 ---
 
+## Introdução 
+Os Algoritmos Evolutivos (AEs) são uma classe de meta-heurísticas de otimização inspiradas no processo de seleção natural e genética. Eles são capazes de encontrar soluções aproximadas para problemas complexos de otimização e busca, mesmo quando o espaço de busca é vasto e não-linear.
+
+Imagine a natureza: ao longo de milhões de anos, as espécies evoluem para se adaptar melhor ao seu ambiente. Indivíduos mais aptos sobrevivem e se reproduzem, passando suas características genéticas para a próxima geração. Os AEs mimetizam esse processo, aplicando-o a problemas computacionais.
+
+
 # Como funcionam? (visão geral)
 
 1. **População inicial**
@@ -44,7 +50,7 @@ Eles simulam o processo de **seleção natural**, onde indivíduos mais adaptado
 * **Algoritmos Genéticos (GA)** → mais conhecidos, trabalham com cadeias (como cromossomos).
 * **Programação Genética (GP)** → evoluem programas ou expressões matemáticas inteiras.
 * **Estrategias Evolutivas (ES)** → focam em parâmetros numéricos contínuos.
-* **Algoritmos de Colônia (PSO, ACO)** → inspirados em comportamento coletivo (formigas, pássaros).
+* **Algoritmos de Colônia (PSO, ACO)** → inspirados em comportamento coletivo (formigas, pássaros). [Clique aqui](./comlemento_swarm.md)
 
 *(muitas vezes agrupamos tudo sob o nome “computação evolutiva”)*
 
@@ -75,6 +81,9 @@ Imagine que você quer encontrar a **melhor dieta possível** dentro de restriç
 ---
 
 *RESUMINDO*: **Algoritmos Evolutivos são métodos de otimização inspirados na natureza, capazes de encontrar boas soluções para problemas difíceis onde métodos tradicionais falham.**
+
+
+
 
 
 ## 4. Aplicações reais.
@@ -113,3 +122,13 @@ Imagine que você quer encontrar a **melhor dieta possível** dentro de restriç
   🔗 [Evolutionary Algorithms for Neural Architecture Search (arXiv)](https://arxiv.org/abs/1808.05377)
 
 ---
+# ***************************  Imagens geradas pelo Gemini AI **************************************
+![Fig1](../fig/fig1.png)
+
+![Fig2](../fig/fig2.png)
+
+![Fig3](../fig/fig3.png)
+
+![Fig4](../fig/fig4.png)
+
+![Fig5](../fig/fig5.png)
