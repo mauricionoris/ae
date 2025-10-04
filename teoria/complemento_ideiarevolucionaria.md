@@ -52,9 +52,6 @@
 **Resumo:**
 A seleção natural foi revolucionária porque **substituiu explicações sobrenaturais por processos naturais observáveis**, integrou múltiplos campos científicos e forneceu **uma base para compreender a diversidade e adaptação da vida**. Seu impacto ainda ressoa na ciência, filosofia e cultura.
 
-
-Perfeito! Vamos organizar **uma lista das ideias científicas mais revolucionárias na história**, incluindo a **seleção natural**, em um **ranking baseado no impacto histórico e transformador na ciência**.
-
 ---
 
 ## **Ranking de ideias científicas revolucionárias**
@@ -114,7 +111,7 @@ Sim, podemos argumentar que a **seleção natural foi uma das ideias mais revolu
 
 ---
 
-## **Por que a seleção natural foi extremamente revolucionária**
+## **LOGO - A seleção natural propiciou**
 
 1. **Mudança de paradigma absoluto**
 
