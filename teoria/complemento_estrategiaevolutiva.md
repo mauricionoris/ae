@@ -1,22 +1,19 @@
-Perfeito 👍 — aqui está a versão **sem ícones** (apenas texto puro), totalmente compatível com **GitHub Markdown**,
-e com **todas as fórmulas renderizadas** como imagens (funcionam em qualquer README.md):
 
----
 
-# Estratégias Evolutivas (Evolution Strategies — ES)
+#  Estratégias Evolutivas (Evolution Strategies — ES)
 
 - **Família:** Algoritmos Evolutivos
-- **Inspiração:** processo de seleção natural e mutação adaptativa em organismos biológicos.
-- **Objetivo:** otimizar funções contínuas sem necessidade de gradiente.
+- **Inspiração:** processo de **seleção natural** e **mutação adaptativa** em organismos biológicos.
+- **Objetivo:** otimizar funções contínuas (sem necessidade de gradiente).
 
 ---
 
-## Conceito básico
+##  Conceito básico
 
-Cada indivíduo representa uma solução candidata (vetor real).
-A população evolui por reprodução, mutação e seleção.
+Cada indivíduo representa uma **solução candidata** (vetor real).
+A população evolui por **reprodução**, **mutação** e **seleção**.
 
-As Estratégias Evolutivas (ES) enfatizam a mutação contínua e a auto-adaptação da variância (passo de busca).
+Ao contrário dos Algoritmos Genéticos (GA), as **Estratégias Evolutivas** enfatizam a **mutação contínua** e a **adaptação automática da variância**.
 
 ---
 
@@ -24,116 +21,122 @@ As Estratégias Evolutivas (ES) enfatizam a mutação contínua e a auto-adapta�
 
 Um indivíduo é descrito por:
 
-![equation](https://render.githubusercontent.com/render/math?math=\(x%2C%20\sigma\))
+$ (x, \sigma) $
+onde:
+
+* $x = (x_1, x_2, \dots, x_n)$ → vetor de variáveis (solução)
+* $\sigma = (\sigma_1, \sigma_2, \dots, \sigma_n)$ → desvios padrão (passos de mutação)
+
+Esses $\sigma_i$ são **auto-adaptativos** — evoluem junto com a solução.
+
+---
+
+##  Mecanismos principais
+
+### 1 Recombinação (opcional)
+
+Pode ser **global** ou **local**:
+$$
+x_i' = \frac{1}{p} \sum_{k=1}^{p} x_i^{(k)}
+$$
+onde $p$ é o número de pais.
+Pode-se aplicar recombinação também aos $\sigma_i$.
+
+---
+
+### 2️ Mutação (núcleo do método)
+
+A mutação é **gaussiana**, controlada por $\sigma$:
+
+$$
+\sigma_i' = \sigma_i \cdot e^{\tau' N(0,1) + \tau N_i(0,1)}
+$$
+
+$$
+x_i' = x_i + \sigma_i' \cdot N_i(0,1)
+$$
 
 onde:
 
-* `x = (x₁, x₂, …, xₙ)` → vetor de variáveis (solução)
-* `σ = (σ₁, σ₂, …, σₙ)` → desvios padrão (passos de mutação)
+* $N(0,1)$ = variável aleatória normal
+* $\tau' = \frac{1}{\sqrt{2n}}$, $\tau = \frac{1}{\sqrt{2\sqrt{n}}}$ → fatores de ajuste recomendados
 
-Esses `σᵢ` evoluem junto com a solução — são auto-adaptativos.
-
----
-
-## Mecanismos principais
-
-### 1. Recombinação (opcional)
-
-Pode ser global ou local:
-
-![equation](https://render.githubusercontent.com/render/math?math=x_i'%20=%20\frac{1}{p}%20\sum_{k=1}^{p}%20x_i^{\(k\)})
-
-onde `p` é o número de pais.
-Também pode-se recombinar os valores de `σᵢ`.
+ **Auto-adaptação:** $\sigma$ se ajusta conforme a evolução progride — aumentando diversidade quando necessário, reduzindo ao se aproximar do ótimo.
 
 ---
 
-### 2. Mutação (núcleo do método)
-
-A mutação é gaussiana, controlada por `σ`:
-
-![equation](https://render.githubusercontent.com/render/math?math=\sigma_i'%20=%20\sigma_i%20\cdot%20e^{\tau'%20N\(0%2C1\)%20+%20\tau%20N_i\(0%2C1\)})
-
-![equation](https://render.githubusercontent.com/render/math?math=x_i'%20=%20x_i%20+%20\sigma_i'%20\cdot%20N_i\(0%2C1\))
-
-onde:
-
-* `N(0,1)` é uma variável aleatória normal
-* `τ' = 1 / √(2n)` e `τ = 1 / √(2√n)` são fatores de ajuste recomendados
-
-A auto-adaptação permite que `σ` aumente a diversidade quando necessário e diminua ao se aproximar do ótimo.
-
----
-
-### 3. Seleção
+### 3️ Seleção
 
 Dois esquemas clássicos:
 
-#### a) (μ, λ)-ES
+#### a) $(\mu, \lambda)$-ES
 
-* Geram-se `λ` descendentes de `μ` pais.
-* Apenas os descendentes competem.
+* Geram-se $\lambda$ descendentes de $\mu$ pais.
+* Apenas os **descendentes** competem.
 * Fortemente seletivo (melhor para exploração).
 
-![equation](https://render.githubusercontent.com/render/math?math=\text{Seleção%3A%20escolher%20os%20}%5Cmu%20\text{%20melhores%20de%20}%5Clambda)
+$$
+\text{Seleção: } \text{escolher os } \mu \text{ melhores de } \lambda
+$$
 
-#### b) (μ + λ)-ES
+#### b) $(\mu + \lambda)$-ES
 
 * Pais e filhos competem juntos.
 * Mais estável, favorece convergência suave.
 
-![equation]([https://render.githubusercontent.com/render/math?math=\text{Seleção%3A%20escolher%20os%20}%5Cmu%20\text{%20melhores%20de%20}(](https://render.githubusercontent.com/render/math?math=\text{Seleção%3A%20escolher%20os%20}%5Cmu%20\text{%20melhores%20de%20}%28) \mu%20+%20\lambda))
+$$
+\text{Seleção: } \text{escolher os } \mu \text{ melhores de } (\mu + \lambda)
+$$
 
 ---
 
-## Pseudocódigo
+##  Pseudocódigo
 
 ```text
 Inicialize μ indivíduos (x, σ)
 Avalie f(x) para todos
 
-Repita até o critério de parada:
+repita até o critério de parada:
   Recombine pais (opcional)
-  Aplique mutação gaussiana para gerar λ descendentes
+  Mutação gaussiana para gerar λ descendentes
   Avalie f(x') para os λ descendentes
   Selecione os μ melhores:
       (μ, λ)-ES → apenas descendentes
       (μ + λ)-ES → pais + descendentes
-
-Retorne o melhor indivíduo
+retorne o melhor indivíduo
 ```
 
 ---
 
-## Parâmetros típicos
+##  Parâmetros típicos
 
-| Parâmetro | Significado          | Valor sugerido                 |
-| --------- | -------------------- | ------------------------------ |
-| μ         | número de pais       | 10–50                          |
-| λ         | número de filhos     | 5 × μ                          |
-| τ', τ     | fatores de adaptação | 1/√(2n), 1/√(2√n)              |
-| σ inicial | passo de mutação     | 0.1 a 0.3 do range da variável |
-
----
-
-## Vantagens
-
-* Adaptativo: ajusta a escala de busca automaticamente
-* Eficiente para otimização contínua sem gradiente
-* Bom equilíbrio entre exploração e refinamento local
-* Fácil paralelização (avaliações independentes)
+| Parâmetro        | Significado          | Valor sugerido                                    |
+| ---------------- | -------------------- | ------------------------------------------------- |
+| $\mu$            | número de pais       | 10–50                                             |
+| $\lambda$        | número de filhos     | $5 \times \mu$                                    |
+| $\tau', \tau$    | fatores de adaptação | $\frac{1}{\sqrt{2n}}, \frac{1}{\sqrt{2\sqrt{n}}}$ |
+| $\sigma$ inicial | passo de mutação     | 0.1 a 0.3 do range da variável                    |
 
 ---
 
-## Limitações
+##  Vantagens
 
-* Convergência lenta em funções altamente multimodais
-* Menos eficiente em problemas discretos
-* Sensível ao escalonamento das variáveis
+- Adaptativo: ajusta escala de busca automaticamente
+- Eficiente para otimização contínua sem gradiente
+- Bom equilíbrio entre exploração e exploração local
+- Fácil paralelização (avaliações independentes)
 
 ---
 
-## Aplicações típicas
+##  Limitações
+
+- Convergência lenta em funções altamente multimodais
+- Menos eficiente em problemas discretos
+- Sensível ao dimensionamento das variáveis
+
+---
+
+##  Aplicações típicas
 
 * Ajuste de hiperparâmetros em modelos sem gradiente
 * Otimização de parâmetros de controle e engenharia
@@ -144,27 +147,23 @@ Retorne o melhor indivíduo
 
 ## Extensões modernas
 
-### CMA-ES (Covariance Matrix Adaptation ES)
+###  CMA-ES (Covariance Matrix Adaptation ES)
 
-Atualiza a matriz de covariância das mutações — permitindo explorar correlações entre variáveis.
-É o estado da arte em otimização sem gradiente contínua.
+Atualiza a **matriz de covariância** das mutações — permitindo explorar correlações entre variáveis.
+É o **estado da arte** em otimização sem gradiente contínua.
 
-### NES (Natural Evolution Strategies)
+###  NES (Natural Evolution Strategies)
 
-Usa gradiente natural para atualizar uma distribuição de busca paramétrica.
+Usa **gradiente natural** para atualizar uma distribuição de busca paramétrica.
 
 ---
 
 ## Resumo rápido
 
-| Tipo       | Seleção                | Adaptação      | Melhor para                       |
-| ---------- | ---------------------- | -------------- | --------------------------------- |
-| (1+1)-ES   | elitista simples       | σ adaptativo   | problemas pequenos                |
-| (μ, λ)-ES  | descendentes apenas    | auto-adaptação | exploração ampla                  |
-| (μ + λ)-ES | pais + filhos          | auto-adaptação | estabilidade                      |
-| CMA-ES     | covariância adaptativa | global         | alta dimensão / funções complexas |
+| Tipo                 | Seleção                | Adaptação           | Melhor para                       |
+| -------------------- | ---------------------- | ------------------- | --------------------------------- |
+| $(1+1)$-ES           | elitista simples       | $\sigma$ adaptativo | problemas pequenos                |
+| $(\mu, \lambda)$-ES  | descendentes apenas    | auto-adaptação      | exploração ampla                  |
+| $(\mu + \lambda)$-ES | pais + filhos          | auto-adaptação      | estabilidade                      |
+| CMA-ES               | covariância adaptativa | global              | alta dimensão / funções complexas |
 
----
-
-Deseja que eu gere o mesmo estilo para **PSO** e **ACO** (com fórmulas em imagem compatíveis com GitHub também)?
-Posso unificar tudo em um único documento Markdown técnico.
