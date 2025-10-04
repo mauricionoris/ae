@@ -4,7 +4,7 @@
 Algoritmos Evolutivos são técnicas de Inteligência Artificial inspiradas na evolução natural. Eles simulam o processo de seleção natural, onde indivíduos mais adaptados têm maior chance de sobreviver e se reproduzir, gerando novas soluções cada vez melhores para um problema.
 
 
-# **Plano de Curso – Algoritmos Evolutivos (8 aulas de 3h)**
+# **Plano de Curso – Algoritmos Evolutivos **
 
 **Estrutura de cada aula:**
 
@@ -36,6 +36,25 @@ A nota final será composta pelos seguintes critérios:
 
 ## Cronograma (pode haver alterações)
 ![Cronograma](./fig/cronograma.png)
+
+----
+
+# Projeto
+
+### [Sugestões de temas](./projeto/readme.md)
+### *Grupos de 3 a 5 pessoas. (excessões podem ser discutidas)*
+
+**A entrega será semelhante ao bimestre passado. **
+
+
+O que deve constar na entrega:
+| Item                                               |
+| -------------------------------------------------- |
+| 1. Vídeo explicando o trabalho                     |
+| 2. Código fonte                                    |
+| 3. Relatório dos experimentos                      |
+
+
 
 
 ## **Distribuição Aula a Aula**
