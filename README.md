@@ -4,7 +4,7 @@
 Algoritmos Evolutivos são técnicas de Inteligência Artificial inspiradas na evolução natural. Eles simulam o processo de seleção natural, onde indivíduos mais adaptados têm maior chance de sobreviver e se reproduzir, gerando novas soluções cada vez melhores para um problema.
 
 
-# **Plano de Curso – Algoritmos Evolutivos **
+# **Plano de Curso – Algoritmos Evolutivos**
 
 **Estrutura de cada aula:**
 
@@ -14,7 +14,7 @@ Algoritmos Evolutivos são técnicas de Inteligência Artificial inspiradas na e
 
 Depois que o conteúdo teórico estiver fechado, **todo o tempo será prática + projeto**.
 
-## Critérios de avaliação
+## **Critérios de avaliação**
 
 A nota final será composta pelos seguintes critérios:
 
@@ -25,7 +25,7 @@ A nota final será composta pelos seguintes critérios:
 | Atividades individuais              | 20%  |
 
 
-## Cronograma de entrega das atividades
+### Cronograma de entrega das atividades
 
 | Quando a atividade for entregue                   | Valor |
 | --------------------------------------------------| ----- |
@@ -34,7 +34,7 @@ A nota final será composta pelos seguintes critérios:
 | Atrasado entre 19/11/2025 e 02/12/2025            |  50%  |
 
 
-## Cronograma (pode haver alterações)
+## Cronograma (sujeito a alterações)
 ![Cronograma](./fig/cronograma.png)
 
 ----
