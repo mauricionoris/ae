@@ -44,7 +44,7 @@ A nota final será composta pelos seguintes critérios:
 ### [Sugestões de temas](./projeto/readme.md)
 ### *Grupos de 3 a 5 pessoas. (excessões podem ser discutidas)*
 
-**A entrega será semelhante ao bimestre passado. **
+**A entrega será semelhante ao bimestre passado.**
 
 
 O que deve constar na entrega:

@@ -1,6 +1,6 @@
 # Sugestões de temas para o seu projeto
 
-Abaixo seguem algumas sugestões organizaras em três blocos:
+Abaixo seguem algumas sugestões organizaras em quatro blocos:
 
 1) Focado em casos de caso de uso 
 2) IA (NLP)
