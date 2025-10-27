@@ -11,9 +11,11 @@ Ao girar a roleta, a probabilidade de ser escolhido é proporcional ao desempenh
 
 1. Calcula-se o fitness total da população.
 2. Cada indivíduo tem uma probabilidade:
-   $$
-   P(i) = \frac{fitness(i)}{\sum fitness(j)}
-   $$
+   
+$$
+P(i) = \frac{fitness(i)}{\sum fitness(j)}
+$$
+
 3. A roleta é girada (gerando um número aleatório entre 0 e 1), e o indivíduo correspondente é selecionado.
 
 **Vantagem:**
