@@ -148,11 +148,11 @@ Em vez de trocar genes diretamente, os valores são **combinados por média pond
 
 A fórmula geral é:
 
-[
+$$
 Filho = \alpha \cdot Pai_1 + (1 - \alpha) \cdot Pai_2
-]
+$$
 
-onde ( \alpha \in [0,1] ).
+onde $\alpha \in [0,1]$
 
 **Exemplo:**
 
